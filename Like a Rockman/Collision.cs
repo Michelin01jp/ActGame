@@ -68,10 +68,7 @@ namespace Like_a_Rockman
         {
             Vector2 Moved_LR = aabb.Position + new Vector2(velocity.X, 0);
             Vector2 Moved_TB = aabb.Position + new Vector2(0, velocity.Y);
-
-            bool Ychanged = false; // Y方向の変更を行ったか
-            bool Xchanged = false; // X方向の変更を行ったか
-
+            
             // 移動前の上下左右の位置
             int GridLeft = (int)(aabb.Position.X / MapData.GridWidth);
             int GridTop = (int)(aabb.Position.Y / MapData.GridHeight);
@@ -82,53 +79,6 @@ namespace Like_a_Rockman
             int MovedGridTop = (int)(Moved_TB.Y / MapData.GridHeight);
             int MovedGridRight = (int)((Moved_LR.X + aabb.Size.X) / MapData.GridWidth);
             int MovedGridBottom = (int)((Moved_TB.Y + aabb.Size.Y) / MapData.GridHeight);
-
-            #region 定義域を守っているか
-            // 上の判定
-            if (Moved_TB.Y < 0)
-            {
-                aabb.Position.Y = 0;
-                MovedGridTop = 0;
-                velocity.Y = 0;
-                Ychanged = true;
-            }
-            // 下の判定
-            if (MovedGridBottom >= MapData.Map[0].Count)
-            {
-                aabb.Position.Y = (MapData.Map[0].Count - 1) * MapData.GridHeight - (aabb.Size.Y - MapData.GridHeight);
-                MovedGridBottom = MapData.Map[0].Count - 1;
-                velocity.Y = 0;
-                Ychanged = true;
-            }
-            // 左の判定
-            if (Moved_LR.X < 0)
-            {
-                aabb.Position.X = 0;
-                MovedGridLeft = 0;
-                velocity.X = 0;
-                Xchanged = true;
-            }
-            // 右の判定
-            if (MovedGridRight >= MapData.Map.Count)
-            {
-                aabb.Position.X = (MapData.Map.Count - 1) * MapData.GridWidth - (aabb.Size.X - MapData.GridWidth);
-                MovedGridRight = MapData.Map.Count - 1;
-                velocity.X = 0;
-                Xchanged = true;
-            }
-            #endregion
-
-            if (Xchanged && Ychanged)
-                return;
-
-            if (Moved_LR.X % MapData.GridWidth == 0 && !Xchanged)
-                MovedGridLeft++;
-            if (Moved_TB.Y % MapData.GridHeight == 0 && !Ychanged)
-                MovedGridTop++;
-            if ((Moved_LR.X + aabb.Size.X) % MapData.GridWidth == 0 && !Xchanged)
-                MovedGridRight--;
-            if ((Moved_TB.Y + aabb.Size.Y) % MapData.GridHeight == 0 && !Ychanged)
-                MovedGridBottom--;
 
             Console.WriteLine("{0}, {1}, {2}, {3}", MovedGridLeft, MovedGridBottom, MovedGridRight, MovedGridTop);
 
