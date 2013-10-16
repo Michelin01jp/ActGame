@@ -1,0 +1,14 @@
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.csprojResolveAssemblyReference.cache
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.exe.config
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.exe
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.pdb
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.exe
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.pdb
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.exe.config
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.exe
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like_a_Rockman.pdb
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.exe
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.pdb
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.csprojResolveAssemblyReference.cache

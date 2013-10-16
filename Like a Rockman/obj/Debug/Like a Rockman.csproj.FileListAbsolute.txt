@@ -1,0 +1,28 @@
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe.config
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.pdb
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.csprojResolveAssemblyReference.cache
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.exe
+F:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.pdb
+H:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe.config
+H:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.exe
+H:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.pdb
+H:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe
+H:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.pdb
+H:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+H:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.csprojResolveAssemblyReference.cache
+F:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe.config
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.exe
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.pdb
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.pdb
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+C:\Users\Michelin\Documents\Visual Studio 2012\Projects\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.csprojResolveAssemblyReference.cache
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe.config
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.exe
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.pdb
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.exe
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\Like a Rockman.pdb
+E:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
+E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like a Rockman.csprojResolveAssemblyReference.cache
