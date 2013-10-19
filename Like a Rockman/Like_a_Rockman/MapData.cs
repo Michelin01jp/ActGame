@@ -26,7 +26,9 @@ namespace Like_a_Rockman
         {
             // 定義域を守っていなかった場合
             if (GridX >= Map.Count || GridY >= Map[0].Count || GridX < 0 || GridY < 0)
+            {
                 return false;
+            }
 
             return Map[GridX][GridY].ID != MapObject.ObjectID.None;
         }
@@ -36,11 +38,11 @@ namespace Like_a_Rockman
         /// </summary>
         public static void Load()
         {
-            var db = FileIO.TextLoad("Map.dat");
+            var mapStringList = FileIO.TextLoad("Map.dat");
 
-            for (int i = 0; i < db.Length; i++)
+            for (int i = 0; i < mapStringList.Count; i++)
             {
-                var line = db[i].Split(',');
+                var line = mapStringList[i].Split(',');
 
                 for (int j = 0; j < line.Length; j++)
                 {
@@ -83,8 +85,9 @@ namespace Like_a_Rockman
         public static void Add(int X, int Y, MapObject Item)
         {
             while (Map.Count <= X)
+            {
                 Map.Add(new List<MapObject>());
-
+            }
             Map[X].Add(Item);
         }
     }
