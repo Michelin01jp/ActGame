@@ -38,7 +38,7 @@ namespace Like_a_Rockman
         /// </summary>
         public static void Load()
         {
-            var mapStringList = FileIO.TextLoad("Map2.dat");
+            var mapStringList = FileIO.TextLoad("Map.dat");
 
             for (int i = 0; i < mapStringList.Count; i++)
             {
