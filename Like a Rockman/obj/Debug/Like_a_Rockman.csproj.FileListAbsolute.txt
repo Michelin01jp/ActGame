@@ -12,3 +12,10 @@ E:\Rockman風2DActGame\Like a Rockman\bin\Debug\OpenTK.dll
 E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.exe
 E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.pdb
 E:\Rockman風2DActGame\Like a Rockman\obj\Debug\Like_a_Rockman.csprojResolveAssemblyReference.cache
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\bin\Debug\Like_a_Rockman.exe.config
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\obj\Debug\Like_a_Rockman.exe
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\obj\Debug\Like_a_Rockman.pdb
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\bin\Debug\Like_a_Rockman.exe
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\bin\Debug\Like_a_Rockman.pdb
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\bin\Debug\OpenTK.dll
+D:\Users\Dada\Desktop\toriFork\Like a Rockman\obj\Debug\Like_a_Rockman.csprojResolveAssemblyReference.cache

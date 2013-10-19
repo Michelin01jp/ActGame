@@ -17,32 +17,35 @@ namespace Like_a_Rockman
         /// <returns>ファイルの行ごとの内容</returns>
         public static string[] TextLoad(string FileName)
         {
-            if (File.Exists(FileName))
+            //防御的if文
+            //条件式を反転させて、例外処理のif文にした方が見やすい
+            if (!File.Exists(FileName))
             {
-                ArrayList list = new ArrayList();
+                
+                throw new FileNotFoundException("ファイルが見つかりません", FileName);
+            }
 
-                using (var read = new StreamReader(FileName, Encoding.GetEncoding("Shift_JIS")))
+            ArrayList list = new ArrayList();
+
+            using (var read = new StreamReader(FileName, Encoding.GetEncoding("Shift_JIS")))
+            {
+                string line;
+
+                while ((line = read.ReadLine()) != null)
                 {
-                    string line;
-
-                    while ((line = read.ReadLine()) != null)
-                    {
-                        list.Add(line);
-                    }
+                    list.Add(line);
                 }
-
-                string[] str = new string[list.Count];
-
-                for (int i = 0; i < list.Count; i++)
-                    str[i] = list[i].ToString();
-
-                return str;
             }
-            else
-            {
-                return null;
-            }
+
+            string[] str = new string[list.Count];
+
+            for (int i = 0; i < list.Count; i++)
+                str[i] = list[i].ToString();
+
+            return str;
         }
+
+    
 
         public static bool TextOutput(string FileName, string Content)
         {
