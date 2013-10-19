@@ -26,7 +26,9 @@ namespace Like_a_Rockman
         {
             // 定義域を守っていなかった場合
             if (GridX >= Map.Count || GridY >= Map[0].Count || GridX < 0 || GridY < 0)
+            {
                 return false;
+            }
 
             return Map[GridX][GridY].ID != MapObject.ObjectID.None;
         }
@@ -83,8 +85,9 @@ namespace Like_a_Rockman
         public static void Add(int X, int Y, MapObject Item)
         {
             while (Map.Count <= X)
+            {
                 Map.Add(new List<MapObject>());
-
+            }
             Map[X].Add(Item);
         }
     }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Diagnostics;
 
 namespace Like_a_Rockman
 {
@@ -32,11 +33,17 @@ namespace Like_a_Rockman
 
             using (var read = new StreamReader(FileName, Encoding.GetEncoding("Shift_JIS")))
             {
-                string line;
-
-                while ((line = read.ReadLine()) != null)
+                try
                 {
-                    list.Add(line);
+                    string line;
+                    while ((line = read.ReadLine()) != null)
+                    {
+                        list.Add(line);
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw e;
                 }
             }
 
@@ -49,9 +56,17 @@ namespace Like_a_Rockman
         {
             using (var str = new StreamWriter(FileName, false, Encoding.GetEncoding("Shift_JIS")))
             {
-                str.WriteLine(Content);
-                return true;
+                try
+                {
+                    str.WriteLine(Content);
+                }
+                catch(Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                    return false;
+                }
             }
+            return true;
         }
     }
 }
