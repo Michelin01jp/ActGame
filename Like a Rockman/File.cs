@@ -15,17 +15,20 @@ namespace Like_a_Rockman
         /// </summary>
         /// <param name="FileName">読み込むファイル名</param>
         /// <returns>ファイルの行ごとの内容</returns>
-        public static string[] TextLoad(string FileName)
+        public static List<String> TextLoad(string FileName)
         {
             //防御的if文
             //条件式を反転させて、例外処理のif文にした方が見やすい
             if (!File.Exists(FileName))
             {
-                
+                //「ファイルが見つからない」というのは本来ならあり得ない状態なので、例外を投げて処理を止めた方が良いかも？
+                //例外を返さずに空のコレクションを返してもいいが、その場合は発生した例外を何も処理せずにスルーしてるだけなのでよろしくはない
                 throw new FileNotFoundException("ファイルが見つかりません", FileName);
+
+
             }
 
-            ArrayList list = new ArrayList();
+            var list = new List<String>();
 
             using (var read = new StreamReader(FileName, Encoding.GetEncoding("Shift_JIS")))
             {
@@ -37,12 +40,7 @@ namespace Like_a_Rockman
                 }
             }
 
-            string[] str = new string[list.Count];
-
-            for (int i = 0; i < list.Count; i++)
-                str[i] = list[i].ToString();
-
-            return str;
+            return list;
         }
 
     

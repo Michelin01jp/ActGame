@@ -36,13 +36,11 @@ namespace Like_a_Rockman
         /// </summary>
         public static void Load()
         {
-            var db = FileIO.TextLoad("Map2.dat");
+            var mapStringList = FileIO.TextLoad("Map2.dat");
 
-            
-
-            for (int i = 0; i < db.Length; i++)
+            for (int i = 0; i < mapStringList.Count; i++)
             {
-                var line = db[i].Split(',');
+                var line = mapStringList[i].Split(',');
 
                 for (int j = 0; j < line.Length; j++)
                 {
